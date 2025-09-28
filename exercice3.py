@@ -3,12 +3,12 @@
 
 import random
 
-def choose_element_list(lst_sorted):
+def choose_element_list(lst):
 
-    if not lst_sorted:
+    if not lst:
         return print("La liste ne doit pas être vide.")
 
-    return lst_sorted[random.randint(0,len(lst_sorted)-1)]
+    return lst[random.randrange(len(lst))]
 
 
 # Test de votre code 
