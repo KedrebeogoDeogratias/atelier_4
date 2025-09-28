@@ -18,4 +18,5 @@ e1 = choose_element_list(lst_sorted)
 print('A la première exécution',e1,'a été sélectionné') 
 e2 = choose_element_list(lst_sorted) 
 print('A la deuxième exécution',e2,'a été sélectionné') 
+#Ne marche pas souvent
 assert e1 != e2,"Attention vérifiez votre code, pour deux sélections de suite l'élément sélectionné est le même !"
