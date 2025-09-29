@@ -5,6 +5,9 @@ def mix_list(list_to_mix):
     """
     Retourne une copie mélangée de list_to_mix sans modifier l'originale.
     """
+    if len(list_to_mix) ==0 :
+        return print("liste vide")
+
     # On fait une copie de la liste originale
 
     mixed = list_to_mix[:]
@@ -14,6 +17,9 @@ def mix_list(list_to_mix):
         j = random.randint(0, i)
         mixed[i], mixed[j] = mixed[j], mixed[i]
 
+    # Vérifier que le résultat est différent
+    if mixed == list_to_mix :
+        return mix_list(list_to_mix)  # relancer une fois
     return mixed
 
 
